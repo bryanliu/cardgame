@@ -1,4 +1,7 @@
 # Card Game
+Card Deck has 54 cards and will send to players one by one in round. Every player will count the total points of the cards he own, the play whose total points over 50 will win the game
+
+# Implementation
 Use multi-thread to shuffler 54 cards
 
 # How to execute the game
