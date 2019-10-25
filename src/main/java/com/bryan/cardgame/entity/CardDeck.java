@@ -62,23 +62,12 @@ public class CardDeck {
 
         for (Card c : Card.values()) {
 
-            Thread t = new ShufflerCard(c);
-
-            t.start();
-
-            threadList.add(t);
-
-        }
-
-        for (Thread t : threadList) {
-            try {
-                t.join();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+            for (int i = 0; i < c.getCount(); i++) {
+                availableCards.add(c);
             }
         }
 
-        //Collections.shuffle(availableCards);
+        Collections.shuffle(availableCards);
 
     }
 
