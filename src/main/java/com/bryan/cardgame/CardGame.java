@@ -17,7 +17,7 @@ public class CardGame {
         Player p2 = new Player("Jerry");
         Player p3 = new Player("Brutto");
 
-        List<Player> players = Arrays.asList(new Player[] { p1, p2, p3 });
+        List<Player> players = Arrays.asList(p1, p2, p3);
 
         for (int round = 1; round <= 19; round++) {
 
